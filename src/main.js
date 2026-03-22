@@ -23,9 +23,11 @@ function App(){
             <Route path="/" element={<Home/>}></Route>
             <Route path="/Contact" element={<Contact/>}></Route>
             <Route path="/Dashboard" element={<Dashboard/>}></Route>
+
             {/* nested route =>zero will display with detail and hi and hello as /hi /hello*/}
             <Route path="/Details" element={<Details/>}>
             {/* <Route index element={<Zero/>}></Route> */}
+            
             {/* now zero and bye will show along with detail page */}
             <Route index element={
                 <>
