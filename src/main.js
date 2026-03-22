@@ -14,12 +14,12 @@ function App(){
     return (
         <>
         <BrowserRouter>
-        {/* <nav>
-            <Link to="/">Home</Link>
-            <Link to="/Contact">Contact</Link>
-            <Link to="/Dashboard">Dashboard</Link>
-             <Link to="/Details">Details</Link>
-        </nav> */}
+        <nav>
+        <Link to="/contact">Contact</Link>
+        <Link to="/dashboard">Dashboard</Link>
+        <Link to="/details">Details</Link>
+        <Link to="/github">Github</Link>
+      </nav>
         <Routes>
             <Route path="/" element={<Home/>}></Route>
             <Route path="/Contact" element={<Contact/>}></Route>
@@ -40,7 +40,8 @@ function App(){
             <Route path="Hello" element={<Hello/>}></Route>
             <Route path="Hi" element={<Hi/>}></Route> 
             </Route>
-            <Route path="Github" element={<Github/>}></Route>
+            <Route path="/Github/:name" element={<Github/>}></Route>
+            {/* :name shows that name is dynamic ,cab be catched by useParam in Github */}
         </Routes>
         </BrowserRouter>
         </>
