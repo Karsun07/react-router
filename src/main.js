@@ -8,6 +8,7 @@ import Details from "./components/Details";
 import Zero from "./components/Zero";
 import Hi from "./components/Hi";
 import Hello from "./components/Hello";
+import Bye from "./components/Bye";
 function App(){
     return (
         <>
@@ -24,7 +25,15 @@ function App(){
             <Route path="/Dashboard" element={<Dashboard/>}></Route>
             {/* nested route =>zero will display with detail and hi and hello as /hi /hello*/}
             <Route path="/Details" element={<Details/>}>
-            <Route index element={<Zero></Zero>}></Route>
+            {/* <Route index element={<Zero/>}></Route> */}
+            {/* now zero and bye will show along with detail page */}
+            <Route index element={
+                <>
+                <Zero/>
+                <Bye/>
+                </>}>
+                </Route>
+             
             <Route path="Hello" element={<Hello/>}></Route>
             <Route path="Hi" element={<Hi/>}></Route> 
             </Route>
