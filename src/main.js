@@ -9,6 +9,7 @@ import Zero from "./components/Zero";
 import Hi from "./components/Hi";
 import Hello from "./components/Hello";
 import Bye from "./components/Bye";
+import Github from "./components/Github";
 function App(){
     return (
         <>
@@ -39,6 +40,7 @@ function App(){
             <Route path="Hello" element={<Hello/>}></Route>
             <Route path="Hi" element={<Hi/>}></Route> 
             </Route>
+            <Route path="Github" element={<Github/>}></Route>
         </Routes>
         </BrowserRouter>
         </>
