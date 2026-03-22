@@ -6,7 +6,9 @@ export default function Details(){
             <Link to="Hi">Hi</Link>
             <Link to="Hello">Hello</Link>
         </nav>
-        <h1>This is Details Page</h1>
+        {/* if we want only hi and hello page then we move this statement to zero */}
+        {/* <h1>This is Details Page</h1> */}
+        
         <Outlet></Outlet>
         </>
     )
